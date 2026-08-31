@@ -1,64 +1,47 @@
 import json
 import os
 import requests
-from openai import OpenAI
 
-# 1. Inizializza i client
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-BUFFER_ACCESS_TOKEN = os.environ.get("BUFFER_ACCESS_TOKEN")
-BUFFER_PROFILE_ID = os.environ.get("BUFFER_PROFILE_ID")
-
-# 2. Leggi il database JSON
+# 1. Carica il database JSON
 with open('contenuti.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
-# 3. Seleziona il primo post da pubblicare
-post_data = None
+# 2. Cerca il primo post da pubblicare
+post_to_send = None
 for item in data:
     if item.get('stato') == 'da_pubblicare':
-        post_data = item
+        post_to_send = item
         break
 
-if not post_data:
-    print("Nessun post da pubblicare.")
+if not post_to_send:
+    print("Nessun nuovo post da pubblicare!")
     exit(0)
 
-# 4. Genera il testo completo (Caption + Hashtag) via GPT-4o
-gpt_response = client.chat.completions.create(
-    model="gpt-4o",
-    messages=[
-        {"role": "system", "content": "Sei un social media manager esperto per romanzi."},
-        {"role": "user", "content": f"{post_data['prompt_ai']}. Estratto: '{post_data['estratto']}'."}
-    ]
+# 3. Formatta il messaggio pronto per il social
+messaggio = (
+    f"📖 **NUOVO POST PER IL ROMANZO**\n\n"
+    f"📌 **Tema:** {post_to_send['tema']}\n"
+    f"✍️ **Estratto:** \"{post_to_send['estratto']}\"\n\n"
+    f"💡 **Idea testo da pubblicare:**\n{post_to_send['prompt_ai']}\n\n"
+    f"🎨 **Idea immagine (da creare gratis su Canva/Copilot):**\n{post_to_send['prompt_grafico']}"
 )
-caption_finale = gpt_response.choices[0].message.content
 
-# 5. Genera la grafica via DALL-E 3
-dalle_response = client.images.generate(
-    model="dall-e-3",
-    prompt=f"A cinematic book promo image: {post_data['prompt_grafico']}. Overlay text: '{post_data['estratto']}'",
-    size="1024x1024",
-    quality="standard",
-    n=1,
-)
-image_url = dalle_response.data[0].url
+# 4. Invia la notifica via Telegram (Gratuito)
+TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
+TELEGRAM_CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID')
 
-# 6. Pubblica automaticamente sui social via Buffer API
-buffer_url = "https://api.bufferapp.com/1/updates/create.json"
-payload = {
-    'access_token': BUFFER_ACCESS_TOKEN,
-    'profile_ids[]': BUFFER_PROFILE_ID,
-    'text': caption_finale,
-    'media[picture]': image_url,
-    'now': 'true'
-}
+if TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID:
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    payload = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": messaggio,
+        "parse_mode": "Markdown"
+    }
+    requests.post(url, json=payload)
+    print(f"Post {post_to_send['id']} inviato su Telegram con successo!")
 
-response = requests.post(buffer_url, data=payload)
+# 5. Aggiorna lo stato nel JSON
+post_to_send['stato'] = 'inviato'
 
-if response.status_code == 200:
-    print(f"Post {post_data['id']} pubblicato in automatico!")
-    post_data['stato'] = 'inviato'
-    with open('contenuti.json', 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-else:
-    print("Errore pubblicazione:", response.text)
+with open('contenuti.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
