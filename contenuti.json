@@ -1,1 +1,58 @@
-
+[
+  {
+    "id": "01",
+    "estratto": "Ci sono ferite che non fanno uscire una goccia di sangue, ma lavorano dentro...",
+    "tema": "Temi Generali / Fragilità",
+    "prompt_ai": "Crea un post Instagram emotivo sul tema delle ferite invisibili e dell'empatia. Concludi invitando a scoprire 'La parte che non mostriamo' su Amazon. Aggiungi 5 hashtag sulla narrativa contemporanea.",
+    "prompt_grafico": "Sfondo scuro e minimalista con pioggia su un vetro, testo bianco in evidenza e stile elegante.",
+    "stato": "da_pubblicare"
+  },
+  {
+    "id": "02",
+    "estratto": "Quattro vite, quattro solitudini che vibrano sulla stessa frequenza verso Venezia.",
+    "tema": "Ambientazione / Trama",
+    "prompt_ai": "Scrivi una caption evocativa sulla magia e sulla malinconia di Venezia, presentando la storia di 4 destini che si incrociano. Chiedi ai lettori se hanno mai vissuto un viaggio decisivo.",
+    "prompt_grafico": "Fotografia di un canale di Venezia all'alba o al tramonto, toni caldi/desaturati, citazione in sovrimpressione.",
+    "stato": "da_pubblicare"
+  },
+  {
+    "id": "03",
+    "estratto": "Indossiamo maschere ogni giorno per proteggerci, ma cosa succede quando qualcuno vede oltre?",
+    "tema": "Temi Generali / Maschere",
+    "prompt_ai": "Genera una riflessione profonda sul peso delle aspettative sociali e sulle maschere quotidiane. Invita a riflettere su chi siamo davvero dietro quello che mostriamo.",
+    "prompt_grafico": "Specchio con riflesso leggermente sfocato, estetica cinematografica, testo centrale.",
+    "stato": "da_pubblicare"
+  },
+  {
+    "id": "04",
+    "estratto": "Giovanni viveva in una gabbia dorata, dove ogni successo professionale era solo un modo per non guardarsi dentro.",
+    "tema": "Personaggio: Giovanni",
+    "prompt_ai": "Presenta il personaggio di Giovanni: un manager di successo che deve fare i conti con la propria gabbia interiore. Chiedi alla community se si è mai sentita incastrata.",
+    "prompt_grafico": "Silhouette di un uomo in abito elegante davanti a una vetrata di un grattacielo, atmosfera malinconica.",
+    "stato": "da_pubblicare"
+  },
+  {
+    "id": "05",
+    "estratto": "Elena curava gli altri con precisione chirurgica, ma non sapeva come medicare le proprie crepe.",
+    "tema": "Personaggio: Elena",
+    "prompt_ai": "Scrivi un post sul personaggio di Elena, focalizzato sul contrasto tra l'aiutare gli altri e la difficoltà di salvare se stessi. CTA: scopri la sua storia nel romanzo.",
+    "prompt_grafico": "Dettaglio di una scrivania con una tazza di caffè e fogli scritti a mano, luce soffusa da finestra.",
+    "stato": "da_pubblicare"
+  },
+  {
+    "id": "06",
+    "estratto": "La musica per Sara non era solo un'arte: era l'unico linguaggio in cui non doveva mentire.",
+    "tema": "Personaggio: Sara",
+    "prompt_ai": "Genera una caption dedicata alla musica come rifugio emotivo e verità interiore, introducendo Sara. Aggiungi hashtag legati a musica, libri ed emozioni.",
+    "prompt_grafico": "Dettaglio di uno strumento musicale o spartito d'epoca, toni seppia/scuri, citazione centrata.",
+    "stato": "da_pubblicare"
+  },
+  {
+    "id": "07",
+    "estratto": "Venezia non è solo una città, è un labirinto dove ci si perde per potersi finalmente ritrovare.",
+    "tema": "Venezia / Rinascita",
+    "prompt_ai": "Scrivi un post sognante sul potere dei luoghi e sul fascino dei vicoli veneziani come metafora di rinascita personale.",
+    "prompt_grafico": "Uno scorcio di una calle deserta di Venezia di notte con i riflessi dell'acqua nei canali.",
+    "stato": "da_pubblicare"
+  }
+]
