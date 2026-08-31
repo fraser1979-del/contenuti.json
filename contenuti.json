@@ -3,26 +3,44 @@
     "id": "01",
     "estratto": "Ci sono ferite che non fanno uscire una goccia di sangue, ma lavorano dentro...",
     "tema": "Temi Generali / Fragilità",
-    "prompt_ai": "Crea un post Instagram emotivo sul tema delle ferite invisibili e dell'empatia. Concludi invitando a scoprire 'LA PARTE CHE NON MOSTRIAMO: Un romanzo corale sull'identità e sul destino' su Amazon. Aggiungi 5 hashtag sulla narrativa contemporanea.",
+    "prompt_ai": "Ci dedichiamo così tanto a sembrare forti di fronte al mondo da dimenticare quanto sia umano sentirsi vulnerabili. 'LA PARTE CHE NON MOSTRIAMO' nasce proprio da qui: un viaggio dentro quelle crepe invisibili che tutti ci portiamo dietro, ma che raramente abbiamo il coraggio di raccontare. Se ti sei mai sentito compreso più da una pagina scritta che da tante parole lette al volo, questa storia è per te.",
     "prompt_grafico": "Sfondo scuro e minimalista con pioggia su un vetro, testo bianco in evidenza e stile elegante.",
     "link_amazon": "https://www.amazon.it/PARTE-CHE-NON-MOSTRIAMO-sullidentit%C3%A0/dp/B0DV296L7P",
-    "stato": "inviato"
+    "stato": "da_pubblicare"
   },
   {
     "id": "02",
     "estratto": "Quattro vite, quattro solitudini che vibrano sulla stessa frequenza verso Venezia.",
     "tema": "Ambientazione / Trama",
-    "prompt_ai": "Scrivi una caption evocativa sulla magia e sulla malinconia di Venezia, presentando la storia di 4 destini che si incrociano. Chiedi ai lettori se hanno mai vissuto un viaggio decisivo.",
-    "prompt_grafico": "Fotografia di un canale di Venezia all'alba o al tramonto, toni caldi/desaturati, citazione in sovrimpressione.",
+    "prompt_ai": "Venezia non è soltanto uno sfondo: è un labirinto di specchi e canali dove i destini di quattro personaggi si incrociano inaspettatamente. Ognuno di loro insegue una risposta, ognuno cerca di scappare da ciò che non riesce a dire a se stesso. Qual è stato il viaggio che ha cambiato per sempre la tua prospettiva?",
+    "prompt_grafico": "Fotografia di un canale di Venezia all'alba o al tramonto, toni caldi e desaturati, citazione in sovrimpressione.",
     "link_amazon": "https://www.amazon.it/PARTE-CHE-NON-MOSTRIAMO-sullidentit%C3%A0/dp/B0DV296L7P",
-    "stato": "inviato"
+    "stato": "da_pubblicare"
   },
   {
     "id": "03",
     "estratto": "Indossiamo maschere ogni giorno per proteggerci, ma cosa succede quando qualcuno vede oltre?",
     "tema": "Temi Generali / Maschere",
-    "prompt_ai": "Genera una riflessione profonda sul peso delle aspettative sociali e sulle maschere quotidiane. Invita a riflettere su chi siamo davvero dietro quello che mostriamo.",
+    "prompt_ai": "Quanto costa mantenere intatta la facciata che mostriamo agli altri ogni giorno? Il peso delle aspettative, la paura di deludere, il timore di non essere abbastanza. In questo romanzo ho voluto esplorare cosa accade quando la maschera finalmente cede e lascia spazio alla nostra parte più vera.",
     "prompt_grafico": "Specchio con riflesso leggermente sfocato, estetica cinematografica, testo centrale.",
+    "link_amazon": "https://www.amazon.it/PARTE-CHE-NON-MOSTRIAMO-sullidentit%C3%A0/dp/B0DV296L7P",
+    "stato": "da_pubblicare"
+  },
+  {
+    "id": "04",
+    "estratto": "Giovanni viveva in una gabbia dorata, dove ogni successo professionale era solo un modo per non guardarsi dentro.",
+    "tema": "Personaggio: Giovanni",
+    "prompt_ai": "Vi presento Giovanni: all'esterno una carriera impeccabile, traguardi raggiunti e il controllo apparente di ogni dettaglio. Dentro, una gabbia invisibile costruita per non dover mai affrontare il vuoto. Ti è mai capitato di rifugiarti nel lavoro per non ascoltare quello che hai dentro?",
+    "prompt_grafico": "Silhouette di un uomo in abito elegante davanti alla vetrata di un grattacielo, atmosfera malinconica.",
+    "link_amazon": "https://www.amazon.it/PARTE-CHE-NON-MOSTRIAMO-sullidentit%C3%A0/dp/B0DV296L7P",
+    "stato": "da_pubblicare"
+  },
+  {
+    "id": "05",
+    "estratto": "Elena curava gli altri con precisione chirurgica, ma non sapeva come medicare le proprie crepe.",
+    "tema": "Personaggio: Elena",
+    "prompt_ai": "Chi si prende cura di chi si occupa sempre di tutti gli altri? Elena vive per curare, ascoltare e proteggere le persone attorno a sé, nascondendo al mondo le proprie ferite aperte. Una figura immensamente umana in cui è impossibile non rispecchiarsi.",
+    "prompt_grafico": "Dettaglio di una scrivania con una tazza di caffè e fogli scritti a mano, luce soffusa da finestra.",
     "link_amazon": "https://www.amazon.it/PARTE-CHE-NON-MOSTRIAMO-sullidentit%C3%A0/dp/B0DV296L7P",
     "stato": "da_pubblicare"
   }
