@@ -2,7 +2,7 @@ import json
 import os
 import requests
 
-LINK_AMAZON_DEFAULT = "https://www.amazon.it/s?k=LA+PARTE+CHE+NON+MOSTRIAMO+Francesco+Sergi"
+LINK_AMAZON_DEFAULT = "https://www.amazon.it/PARTE-CHE-NON-MOSTRIAMO-sullidentit%C3%A0/dp/B0DV296L7P"
 
 # 1. Carica il database dei contenuti post
 with open('contenuti.json', 'r', encoding='utf-8') as f:
